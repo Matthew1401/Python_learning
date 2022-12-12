@@ -14,16 +14,12 @@ import os
 clear = lambda: os.system("cls")
 clear()
 
-import time
-year = time.gmtime()[0] #2022
+number = int(input("Give me number: "))
 
 
-name = input("Give me your name: ")
-age = int(input("Enter your age: "))
-
-if  0 < age < 100:
-    birth = year - age + 100
-    z = int(input("Give me another number: "))
-    print("You will be 100 years old in {}.\n".format(birth) * z)
+if number % 4 == 0:
+    print("Number {} is a multiple of 4".format(number))
+elif number % 2 == 0:
+    print("Number {} is even".format(number))
 else:
-    print("Is it your true age? Kid")
+    print("Number {} is odd".format(number))
