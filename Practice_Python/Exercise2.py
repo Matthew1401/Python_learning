@@ -16,10 +16,19 @@ clear()
 
 number = int(input("Give me number: "))
 
-
 if number % 4 == 0:
     print("Number {} is a multiple of 4".format(number))
 elif number % 2 == 0:
     print("Number {} is even".format(number))
 else:
     print("Number {} is odd".format(number))
+
+
+print("Give me another two numbers!")
+num = int(input(": "))
+check = int(input(": "))
+
+if num % check == 0:
+    print("The number {} is divides by check ({})".format(num, check))
+else:
+    print("The number {} is not divides by check ({})".format(num, check))
