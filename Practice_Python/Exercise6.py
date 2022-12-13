@@ -11,3 +11,12 @@ clear()
 
 
 text = input("I will check if your word is a palindrome or not.\nEnter a single word: ")
+text1 = ""
+
+for i in text:
+    text1 = i + text1[:]
+
+if text == text1:
+    print("Word '{}' is a palindrome!".format(text))
+else:
+    print("Word '{}' is not a palindrome!".format(text))
