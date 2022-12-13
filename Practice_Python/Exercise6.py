@@ -12,6 +12,8 @@ clear()
 
 text = input("I will check if your word is a palindrome or not.\nEnter a single word: ")
 text1 = ""
+#text1 = text[::-1]# we can use this instead loop 'for'
+#print(text1)
 
 for i in text:
     text1 = i + text1[:]
