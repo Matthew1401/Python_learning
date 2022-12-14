@@ -33,7 +33,7 @@ def Win2():
     print("Congratulations Player2 YOU WON!")
 
 def Remis():
-    print("Well, you both just get a draw")
+    print("Well, it's a tie!")
 
 
 player1 = Choose1()
