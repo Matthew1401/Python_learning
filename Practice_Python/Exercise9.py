@@ -46,9 +46,9 @@ while True:
             print("You won!\nYou took {} tracks to find it".format(z))
             break
         elif number < x:
-            print("Look higher!")
+            print("Too low!")
         else:
-            print("Look lower!")
+            print("Too high!")
     elif number == "exit":
         print("See you later!")
         break
