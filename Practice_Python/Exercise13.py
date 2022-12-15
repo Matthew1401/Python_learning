@@ -26,7 +26,7 @@ def Fibonnaci(a, b, c):
         else:
             print("{}, ".format(c), end="")
 
-        if c % 2 == 0:
+        if a < b:
             a = c
         else:
             b = c
