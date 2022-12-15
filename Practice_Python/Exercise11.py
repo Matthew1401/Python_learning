@@ -7,21 +7,17 @@ import os
 clear = lambda: os.system("cls")
 clear()
 
-a=[]
-
-def get_number(help_text="Give a number: "):
-    return int(input(help_text))
-
-num = get_number()
-i = num
+num = int(input("Give a number: "))
+a = [i for i in range(2, num) if num % i == 0]
 
 
-while i != 0:
-    if num % i == 0:
-        a.append(i)
-    i-=1
+def is_prime(num):
+    if num > 0:
+        if len(a) == 0:
+            print("Is prime!")
+        else:
+            print("Is NOT prime!")
+    else:
+        print("Is NOT prime!")
 
-if len(a) == 2:
-    print("Your number is prime")
-else:
-    print("Your number is not prime")
+is_prime(num)
