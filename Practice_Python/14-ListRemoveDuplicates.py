@@ -1,6 +1,6 @@
 """
 Write a program (function!) that takes a list and returns
- a new list that contains all the elements of the first list minus all the duplicates.
+a new list that contains all the elements of the first list minus all the duplicates.
 
 Extras:
 1. Write two different functions to do this - one using a loop and constructing a list, and another using sets.
@@ -12,11 +12,11 @@ a_list = [1, 2, 3, 4, 5, 1]
 
 
 def removing_duplicates_using_loop():
-    b_list = []
+    new_list = []
     for element in a_list:
-        if element not in b_list:
-            b_list.append(element)
-    return b_list
+        if element not in new_list:
+            new_list.append(element)
+    return new_list
 
 
 def removing_duplicates_using_sets():
